@@ -3,7 +3,7 @@
 Prerequisite:
 - Install azd command line
 - Visual Studio 2022 preview 17.9. and newer
-- Visual Studio Code optional
+- Visual Studio Code Optional
 - Docker Desktop for local development
 
 ## Login to azure
@@ -75,16 +75,17 @@ When finished testing and playing, then clean up:
 .\stop.ps1
 ```
 
-Snapshot of start.ps1 and stop.ps1 process
+Snapshot of `start.ps1` and `stop.ps1` process
 
 ![image](https://github.com/maythamfahmi/net-aspire-playground/assets/9260645/6df081a6-3b4b-4628-870b-8c3af4db9359)
 
 
-
-Read more
-
-## Aspire home
+## Learn more about Aspire
 
 https://learn.microsoft.com/en-us/dotnet/aspire/
 
-Note: The background of .net aspire comes from Microsoft Tye 2020, which was very useful tool, what was turned overtime into Aspire
+## Contribution
+
+If you make a nice finding or something that I am not a ware of in Aspire, please make a PR to this repo 😊
+
+Note: The background of .net aspire comes from Microsoft Tye 2020, which was a very useful tool, that was turned over time into Aspire
