@@ -86,6 +86,8 @@ https://learn.microsoft.com/en-us/dotnet/aspire/
 
 ## Contribution
 
-If you make a nice finding or something that I am not a ware of in Aspire, please make a PR to this repo 😊
+The repo will be kept updated with new changes from .net Aspire continuous releases and will be as updated as possible.
+
+If you make a nice finding or something that I am not aware of in Aspire, please make a PR to this repo 😊
 
 Note: The background of .net aspire comes from Microsoft Tye 2020, which was a very useful tool, that was turned over time into Aspire
