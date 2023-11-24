@@ -1,55 +1,83 @@
-# Step by step action
+# Step-by-step action
 
-Prerequest:
+Prerequisite:
 - Install azd command line
-- Visual Studio 2022 preview
+- Visual Studio 2022 preview 17.9. and newer
 - Docker Desktop for local development
 
-# Login to azure
+## Login to azure
+```
 azd auth login
+```
 
-# Switch to Aspire project
+## Switch to Aspire project
+```
 cd WeatherApp.AppHost
+```
 
-# generate manifest.json
+## generate manifest.json
+```
 dotnet run --publisher manifest --output-path manifest.json
+```
 
-# Required only first time
+## Required only first time
+```
 azd init
+```
+
+What to answer:
+```
 -> Use code in the current directory
 
--> Confirm and continue initializaing my app
+-> Confirm and continue initializing my app
 
 [X] frontend
 [ ] weatherapi
 
 Enter a new environment name: staging-environment
+```
+When done successfully
 
-When don successfully
-
+```
 azd up
+```
+
 -> subscription selection
 -> location
-wait provision resources in azure
+wait for provision resources in Azure
 
-# to delete resource
+## to delete resource
+```
 azd down
-
-# Enable feature that generate bicep
+```
+## Enable feature that generates bicep
+```
 azd config set alpha.infraSynth on
+```
 
-# Generate infra folder with bicep 
+## Generate infra folder with bicep 
+```
 azd infra synth
+```
 
-I have put all commands line order to start and stop the solution
+I have put all commands in line order to start and stop the solution
 
-From powershell
+From PowerShell:
 
+```
 .\start.ps1
+```
+
+When finished testing and playing, then clean up:
+
+```
+.\stop.ps1
+```
 
 Read more
 
-Aspire home
+## Aspire home
+
 https://learn.microsoft.com/en-us/dotnet/aspire/
 
-Note: Background of .net aspire come from Microsoft Tye 2020, was very usful tools, what was turned overtime to Aspire
+Note: The background of .net aspire comes from Microsoft Tye 2020, which was very useful tool, what was turned overtime into Aspire
