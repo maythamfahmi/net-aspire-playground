@@ -6,22 +6,35 @@ Prerequisite:
 - Visual Studio Code Optional
 - Docker Desktop for local development
 
-## Login to azure
+## Local development
+When you clone the code, open it with Visual Studio 2022 preview 17.9 and newer and set the startup project to **WeatherApp.AppHost** and fire up.
+
+![image](https://github.com/maythamfahmi/net-aspire-playground/assets/9260645/4654bfda-8514-4392-8ed9-6b90451736c1)
+
+With the current code, it will start a dashboard.
+
+![image](https://github.com/maythamfahmi/net-aspire-playground/assets/9260645/5a10b79e-4469-476a-a0c5-a1f6d42a20f9)
+
+## Azure Cloud Development
+
+Follow the steps below:
+
+### Login to azure
 ```
 azd auth login
 ```
 
-## Switch to Aspire project
+### Switch to Aspire project
 ```
 cd WeatherApp.AppHost
 ```
 
-## generate manifest.json
+### generate manifest.json
 ```
 dotnet run --publisher manifest --output-path manifest.json
 ```
 
-## Required only first time
+### Required only first time
 ```
 azd init
 ```
@@ -47,16 +60,16 @@ azd up
 -> location
 wait for provision resources in Azure
 
-## to delete resource
+### to delete the resource
 ```
 azd down
 ```
-## Enable feature that generates bicep
+### Enable a feature that generates bicep
 ```
 azd config set alpha.infraSynth on
 ```
 
-## Generate infra folder with bicep 
+### Generate infra folder with bicep 
 ```
 azd infra synth
 ```
@@ -80,11 +93,11 @@ Snapshot of `start.ps1` and `stop.ps1` process
 ![image](https://github.com/maythamfahmi/net-aspire-playground/assets/9260645/6df081a6-3b4b-4628-870b-8c3af4db9359)
 
 
-## Learn more about Aspire
+### Learn more about Aspire
 
 https://learn.microsoft.com/en-us/dotnet/aspire/
 
-## Contribution
+### Contribution
 
 The repo will be kept updated with new changes from .net Aspire continuous releases and will be as updated as possible.
 
