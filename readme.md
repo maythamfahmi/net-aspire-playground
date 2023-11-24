@@ -3,6 +3,7 @@
 Prerequisite:
 - Install azd command line
 - Visual Studio 2022 preview 17.9. and newer
+- Visual Studio Code optional
 - Docker Desktop for local development
 
 ## Login to azure
