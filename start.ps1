@@ -2,7 +2,7 @@ azd auth login
 
 # customize settings
 $env = "staging-qa"
-$subscription = "321fca3c-dbe8-4ce7-98a3-8145b43fa992" # "6d4d4c84-28eb-4ed0-841c-35827022e178"
+$subscription = "<put your subscription guid>"
 $location = "westeurope"
 
 # Switch to Aspire project

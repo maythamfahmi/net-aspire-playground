@@ -3,6 +3,7 @@
 Prerequest:
 - Install azd command line
 - Visual Studio 2022 preview
+- Docker Desktop for local development
 
 # Login to azure
 azd auth login
@@ -39,6 +40,12 @@ azd config set alpha.infraSynth on
 
 # Generate infra folder with bicep 
 azd infra synth
+
+I have put all commands line order to start and stop the solution
+
+From powershell
+
+.\start.ps1
 
 Read more
 
