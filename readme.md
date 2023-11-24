@@ -75,6 +75,12 @@ When finished testing and playing, then clean up:
 .\stop.ps1
 ```
 
+Snapshot of start.ps1 and stop.ps1 process
+
+![image](https://github.com/maythamfahmi/net-aspire-playground/assets/9260645/6df081a6-3b4b-4628-870b-8c3af4db9359)
+
+
+
 Read more
 
 ## Aspire home
