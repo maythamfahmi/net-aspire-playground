@@ -78,7 +78,7 @@ I have put all commands in line order to start and stop the solution
 
 Before running the following `start.ps1`, you need to edit it with your azure subscription id.
 
-From PowerShell.
+From PowerShell:
 
 ```
 .\start.ps1
@@ -106,3 +106,12 @@ The repo will be kept updated with new changes from .net Aspire continuous relea
 If you make a nice finding or something that I am not aware of in Aspire, please make a PR to this repo 😊
 
 Note: The background of .net aspire comes from Microsoft Tye 2020, which was a very useful tool, that was turned over time into Aspire
+
+### StackOverflow
+
+- [https://stackoverflow.com/a/77536922/3088349](https://stackoverflow.com/questions/tagged/dotnet-aspire)https://stackoverflow.com/questions/tagged/dotnet-aspire
+
+### issues
+
+- https://github.com/dotnet/aspire/issues
+- https://github.com/Azure/azure-dev/issues/3020
