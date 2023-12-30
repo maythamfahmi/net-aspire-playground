@@ -1,18 +1,7 @@
 azd auth login
 
-# customize settings
-$env = "staging-qa"
-$subscription = "321fca3c-dbe8-4ce7-98a3-8145b43fa992"
-$location = "westeurope"
-
 # Switch to Aspire project
 Set-Location WeatherApp.AppHost
-
-# Publish configuration manifast based on the apsire project
-dotnet run --publisher manifest --output-path manifest.json
-
-# Required only first time
-azd init -e $env -l $location -s $subscription 
 
 # Will enable InfraSynth that is used to generate Infrastructure resource
 azd config set alpha.infraSynth on
@@ -20,11 +9,12 @@ azd config set alpha.infraSynth on
 # Generate infrastructure resources
 azd infra synth
 
-# Will provision resources on azure
-azd up
-
 # This might be required as manual interaction or via command line, it is reported issue
+# Connect-AzAccount
 # $name=(Get-AzContainerRegistry -ResourceGroupName "rg-$env").Name
 # Update-AzContainerRegistry -Name $name -ResourceGroupName rg-$env -EnableAdminUser
+
+# Will provision resources on azure
+azd up
 
 Set-Location ..
