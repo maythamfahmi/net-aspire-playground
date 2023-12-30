@@ -76,7 +76,9 @@ azd infra synth
 
 I have put all commands in line order to start and stop the solution
 
-From PowerShell:
+Before running the following `start.ps1`, you need to edit it with your azure subscription id.
+
+From PowerShell.
 
 ```
 .\start.ps1
