@@ -64,6 +64,14 @@ wait for provision resources in Azure
 ```
 azd down
 ```
+
+### to update existing resources
+```
+azd config set alpha.infraSynth on
+azd infra synth
+azd up
+```
+
 ### Enable a feature that generates bicep
 ```
 azd config set alpha.infraSynth on
@@ -82,6 +90,12 @@ From PowerShell:
 
 ```
 .\start.ps1
+```
+
+if you need to update the existing resources
+
+```
+.\update.ps1
 ```
 
 When finished testing and playing, then clean up:
