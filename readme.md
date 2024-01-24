@@ -72,6 +72,15 @@ azd infra synth
 azd up
 ```
 
+### to update your code deployment only
+```
+azd deploy
+```
+
+### to recreate everything and start over again
+
+Just delete .azure folder, infra folder, azure.yml, and manifest.json
+
 ### Enable a feature that generates bicep
 ```
 azd config set alpha.infraSynth on
