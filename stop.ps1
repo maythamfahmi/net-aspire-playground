@@ -1,4 +1,4 @@
-Set-Location WeatherApp.AppHost
+Set-Location MyApp.AppHost
 
 azd down
 

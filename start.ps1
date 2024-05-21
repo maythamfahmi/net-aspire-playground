@@ -3,10 +3,10 @@ azd auth login
 # customize settings
 $env = "staging-qa"
 $subscription = "<put your subscription guid>"
-$location = "westeurope"
+$location = "swedencentral"
 
 # Switch to Aspire project
-Set-Location WeatherApp.AppHost
+Set-Location MyApp.AppHost
 
 # Publish configuration manifast based on the apsire project
 dotnet run --publisher manifest --output-path manifest.json
